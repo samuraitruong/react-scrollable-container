@@ -5,9 +5,16 @@ export function Animation1() {
   const ref1 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const observerOptions = {
+      root: null, // Use the viewport as the root element
+      rootMargin: "10%", // Apply no margin around the root element
+      threshold: 0.2, // Use a threshold of 0 (element is considered visible if any part is visible)
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          console.log("intersecting", entry);
           gsap.to(entry.target, { rotate: 360, duration: 5 });
         } else {
           // Stop or reverse GSAP animation if needed
@@ -15,7 +22,7 @@ export function Animation1() {
           gsap.to(entry.target, { rotate: 270, duration: 5 });
         }
       });
-    });
+    }, observerOptions);
 
     // gsap.to(ref1.current, {
     //   rotate: 360,

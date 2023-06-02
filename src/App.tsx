@@ -3,6 +3,7 @@ import { ScrollableContainer } from "./Scrolllable-Container";
 import { ScrollableLayer } from "./Scollable-Layer";
 import styled from "styled-components";
 import { Animation1 } from "./Animation1";
+import { Animation2 } from "./Animation2";
 
 const Sample = styled.div`
   height: 300px;
@@ -18,13 +19,13 @@ function App() {
     <div className="App">
       <ScrollableContainer>
         <>
-          {/* <ScrollableLayer>
-            <Animation1 />
-          </ScrollableLayer> */}
-
           <ScrollableLayer>
             <Sample style={{ backgroundColor: "red" }}> Test 1</Sample>
           </ScrollableLayer>
+          <ScrollableLayer>
+            <Animation2 />
+          </ScrollableLayer>
+
           <ScrollableLayer>
             <Sample style={{ backgroundColor: "green" }}> Test 2</Sample>
           </ScrollableLayer>
