@@ -25,8 +25,14 @@ export function Animation2() {
             .to(element, { scaleX: 1, scaleY: 1, duration: 1 })
             .to(element, { rotate: 180, duration: 1 })
             .to(element, { rotate: 360, duration: 0.2 })
-            .from(ref2.current, { opacity: 0, y: -10, duration: 1 })
-            .to(ref2.current, { opacity: 1, y: 0, duration: 1 });
+            .from(ref2.current, { opacity: 0, y: -50, duration: 1 })
+            .to(ref2.current, {
+              opacity: 1,
+              y: 20,
+              x: 100,
+              rotate: 360,
+              duration: 3,
+            });
 
           //.to(ref2.current, { opacity: 1, duration: 1 });
         } else {
