@@ -32,7 +32,8 @@ export function Animation2() {
               x: 100,
               rotate: 360,
               duration: 3,
-            });
+            })
+            .to(element, { x: 100, duration: 1, ease: "elastic.out(1, 0.3)" });
 
           //.to(ref2.current, { opacity: 1, duration: 1 });
         } else {

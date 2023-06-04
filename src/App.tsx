@@ -4,6 +4,7 @@ import { ScrollableLayer } from "./Scollable-Layer";
 import styled from "styled-components";
 import { Animation1 } from "./Animation1";
 import { Animation2 } from "./Animation2";
+import { Animation3 } from "./Animation3";
 
 const Sample = styled.div`
   height: 300px;
@@ -24,6 +25,10 @@ function App() {
           </ScrollableLayer>
           <ScrollableLayer>
             <Animation2 />
+          </ScrollableLayer>
+
+          <ScrollableLayer>
+            <Animation3 />
           </ScrollableLayer>
 
           <ScrollableLayer>
