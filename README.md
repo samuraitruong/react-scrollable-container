@@ -1,3 +1,10 @@
+# Introduction
+
+One of my junior team members reached out seeking help with a challenge she was facing. She was struggling to solve a problem related to scroll and animation. Initially, she tried using React-ScrollMagic and React-GSAP, but they fell short of meeting the 100% requirement. To assist her, I initiated a Proof of Concept (POC) by opting not to use any libraries and instead utilized GSAP along with some custom components to address the issue. This approach proved beneficial as it allowed us to customize the animation and UI/UX behavior to successfully achieve the desired requirements.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
